@@ -1,11 +1,11 @@
 const {roundToNDecimals, fromYanToEuro, fromDollarToEuro, fromDollarToYen, fromEuroToDollar, fromYanToPound} = require("./app");
 
-test("0.123456 must be 0.12", ()=>{
+test("0.123456 must be 0.12 rounded to 2 decimals", ()=>{
     const result = roundToNDecimals(0.123456,2)
     expect(result).toBe(0.12)
 })
 
-test("0.987654 must be 0.99", ()=>{
+test("0.987654 must be 0.99 rounded to 2 decimals", ()=>{
     const result = roundToNDecimals(0.987654,2)
     expect(result).toBe(0.99)
 })
